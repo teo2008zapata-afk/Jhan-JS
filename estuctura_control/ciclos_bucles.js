@@ -25,3 +25,12 @@ do {
 } while (c<5);
 
 //ejercicio 3
+const readlineSync = require('readline-sync');
+let numero = parseInt(readlineSync.question('ingrese un numero positivo'));
+let suma = 0;
+let i = 0;
+while (i <= numero){
+    suma += i;
+    i++;
+}
+console.log('la suma de los numeros desde 1 hasta ' + numero + ' es: ' + suma);
